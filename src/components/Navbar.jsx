@@ -1,5 +1,5 @@
-import React from 'react';
-import { FaBars } from 'react-icons/fa';
+import React, { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 // Export Links
 
@@ -27,6 +27,7 @@ const links = [
 ];
 
 const Navbar = () => {
+    const [nav, setNav] = useState(false);
     return (
         <nav className='flex justify-between
         items-center w-full h-20 px-4
@@ -49,11 +50,35 @@ const Navbar = () => {
                     </li>
                 ))}
             </ul>
+            {/* Application od UseState
+            on a Navigation Bar */}
             <div
+                onClick={() => setNav(!nav)}
                 className='cursor-pointer
                 pr-4 z-10 text-gray-300'>
-                <FaBars size={30} />
+                {nav ? <FaTimes size={30} /> :
+                    <FaBars size={30} />}
             </div>
+
+            <ul className='flex flex-col
+            justify-center left-0 items-center
+            absolute top-0 w-full h-screen
+            bg-gradient-to-b from-black
+            to-gray-900 text-gray-300'>
+
+                {links.map(({ id, link }) => (
+
+                    <li
+                        key={id}
+                        className='
+                    px-4 cursor-pointer
+                    capitalize py-3
+                    font-medium text-gray-300
+                    hover:scale-105
+                    duration-200'>{link}</li>
+
+                ))}
+            </ul>
         </nav>
     )
 }

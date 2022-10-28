@@ -10,13 +10,15 @@ import Contact from './components/Contact';
 function App() {
   return (
     <>
-      <Navbar />
-      <Home />
-      <SmLinks />
-      <About />
-      <Portfolio />
-      <Experience />
-      <Contact />
+      <div class="bg-black">
+        <Navbar />
+        <Home />
+        <SmLinks />
+        <About />
+        <Portfolio />
+        <Experience />
+        <Contact />
+      </div>
     </>
   );
 }

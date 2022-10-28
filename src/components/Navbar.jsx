@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
 // Export Links
 
@@ -40,14 +41,16 @@ const Navbar = () => {
 
             <ul className='hidden md:flex'>
                 {links.map(({ id, link }) => (
-                    <li
-                        key={id}
-                        className='px-4
+                    <Link to={link} smooth duration={600} >
+                        <li
+                            key={id}
+                            className='px-4
                     cursor-pointer capitalize
                     text-gray-300 font-medium
                     hover:scale-110
                     duration-200'>{link}
-                    </li>
+                        </li>
+                    </Link>
                 ))}
             </ul>
             {/* Application od UseState
@@ -69,16 +72,17 @@ const Navbar = () => {
             bg-gradient-to-b bg-black text-gray-300'>
 
                     {links.map(({ id, link }) => (
+                        <Link to={link} smooth duration={600} >
 
-                        <li
-                            key={id}
-                            className='
+                            <li
+                                key={id}
+                                className='
                     px-4 cursor-pointer
                     capitalize py-3
                     font-medium text-gray-300
                     hover:scale-105
                     duration-200'>{link}</li>
-
+                        </Link>
                     ))}
                 </ul>
             )}

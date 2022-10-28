@@ -55,30 +55,34 @@ const Navbar = () => {
             <div
                 onClick={() => setNav(!nav)}
                 className='cursor-pointer
-                pr-4 z-10 text-gray-300'>
+                pr-4 z-10 text-gray-300 md:hidden'>
                 {nav ? <FaTimes size={30} /> :
                     <FaBars size={30} />}
             </div>
 
-            <ul className='flex flex-col
+            {nav && (
+
+
+                <ul className='flex flex-col
             justify-center left-0 items-center
             absolute top-0 w-full h-screen
             bg-gradient-to-b from-black
             to-gray-900 text-gray-300'>
 
-                {links.map(({ id, link }) => (
+                    {links.map(({ id, link }) => (
 
-                    <li
-                        key={id}
-                        className='
+                        <li
+                            key={id}
+                            className='
                     px-4 cursor-pointer
                     capitalize py-3
                     font-medium text-gray-300
                     hover:scale-105
                     duration-200'>{link}</li>
 
-                ))}
-            </ul>
+                    ))}
+                </ul>
+            )}
         </nav>
     )
 }

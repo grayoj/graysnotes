@@ -36,7 +36,7 @@ const Portfolio = () => {
                     <p className="text-4xl font-bold inline border-b-4 border-white">
                         Portfolio
                     </p>
-                    <p className="py-6">Take a look at my open-source project</p>
+                    <p className="py-6">Take a look at my open-source projects</p>
                 </div>
 
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">

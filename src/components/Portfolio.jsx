@@ -2,9 +2,7 @@ import React from 'react'
 import blockchainProject from '../assets/blockchainProject.png';
 import LinearRegressionProject from '../assets/LinearRegressionProject.png';
 import predictProject from '../assets/predictProject.png';
-import wordleProjectCopy from '../assets/wordleProjectCopy.png';
-import wordleProject from '../assets/wordleProject.png';
-import calculatorProject from '../assets/calculatorProject.png';
+
 
 
 

@@ -1,12 +1,10 @@
 import React from 'react'
 import typescript from '../assets/typescript.png'
 import keras from '../assets/keras.png'
-import node from '../assets/node.png'
-import pytorch from '../assets/pytorch.png'
 import java from '../assets/java.png'
 import python from '../assets/python.png'
 import cpp from '../assets/cpp.png'
-import golang from '../assets/golang.jpg'
+import golang from '../assets/golang.png'
 
 
 

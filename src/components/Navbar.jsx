@@ -66,8 +66,7 @@ const Navbar = () => {
                 <ul className='flex flex-col
             justify-center left-0 items-center
             absolute top-0 w-full h-screen
-            bg-gradient-to-b from-black
-            to-gray-900 text-gray-300'>
+            bg-gradient-to-b bg-black text-gray-300'>
 
                     {links.map(({ id, link }) => (
 
